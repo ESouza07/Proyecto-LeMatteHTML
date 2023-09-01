@@ -1,0 +1,42 @@
+/* FORMULARIO */
+
+.contactoF{font-size: 25px;
+    font-weight: bold;
+    line-height: normal;
+    margin-top: 20px;
+
+    label{display:block; 
+        color: $color-principal;
+        margin-bottom: 5px;
+        margin-top: 5px;}
+
+    .contactoInpu{width:100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px dashed $color-principal;
+    font-size: 20px;}
+
+    .boton{border-radius: 8px;
+        border: 1px solid $color-terciario;
+        padding: 5px; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: $color-principal;
+        font-size: 20px;
+        font-weight: bold;
+        transition: background-color 0.8s ease;
+        transform: 0.2s ease;
+        
+            &:hover{background-color: $color-terciario;
+                transform: scale(1.1);
+                color: $color-principal;
+                border:1px solid $color-secundario;}
+    }
+}
+
+@media screen and (min-width:1024px){
+        .contactoF{margin-left: 30px;
+                margin-top: 40px;}}
+
+
+

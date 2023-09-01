@@ -1,0 +1,44 @@
+/* CONTACTO */
+
+.display{@extend %margin;
+        display:flex;
+        flex-direction: column;
+    
+    .contacto{width: 100%;
+    
+        .contactoT{font-size: 55px; 
+            text-align: center;
+            margin-bottom: 10px;
+            color: $color-principal;
+            font-weight: bold;}
+
+        .contactoP{font-size: 23px;
+            text-align: justify;
+            color: $color-principal;
+            line-height: normal;
+        
+            .gracias{font-size: 30px;}
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+        .display{display: grid;
+                grid-template-columns: 59% 39%;
+                column-gap: 17px;
+                align-items: center;
+                justify-content: center;
+            
+            .contacto{
+
+                .contactoT{
+                    font-size: 65px;
+                    margin-bottom: 15px;}
+
+                .contactoP{font-size: 40px;
+                
+                    .gracias{font-size: 50px;}
+            }
+        }
+    }
+}

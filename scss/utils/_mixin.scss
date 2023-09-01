@@ -1,0 +1,10 @@
+// MIXIN SIN PARAMETROS
+
+@mixin flex{display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+@mixin grid{display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;}

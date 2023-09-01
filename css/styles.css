@@ -1,0 +1,463 @@
+.display, .mainProductos, .mainNosotros, article {
+  margin: 10px 25px 10px 25px;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+/* BODY */
+body {
+  background-image: url(../images/fondonegro2.jpg);
+  background-size: cover;
+}
+
+/* HEADER NAVBAR */
+header {
+  background-color: #729b79;
+  border-bottom: 2px dashed white;
+  padding: 0px 25px 0px 25px;
+}
+header .navColor {
+  background-color: #729b79;
+}
+header .linkNav {
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+header .linkNav .colorMenu {
+  color: black !important;
+}
+header .linkNav .colorMenu:hover {
+  border-bottom: 2px solid black;
+}
+header .linkNav .colorDesple {
+  margin-left: auto;
+  width: 20%;
+  background-color: #729b79;
+  opacity: 90%;
+}
+header .linkNav .colorDesple .fuenteDesple {
+  text-align: center;
+  background-color: #729b79 !important;
+  color: black !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+header .linkNav .colorDesple .fuenteDesple:hover {
+  border-bottom: 1px solid black;
+}
+header .estiloBoton {
+  border: 2px solid black;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header .linkNav {
+    font-size: 22px;
+    gap: 35px;
+  }
+}
+/* FOOTER */
+footer {
+  height: auto;
+  background-color: #729b79;
+  border-top: 2px dashed white;
+  padding-block: 10px;
+}
+footer div div p {
+  margin: 0;
+}
+footer .footerD {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 30px;
+}
+footer .footerD .footerP {
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+}
+footer .instagram {
+  height: 35px;
+  margin-right: 80px;
+  transform: 0.2s ease;
+}
+footer .instagram:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1024px) {
+  footer .instagram {
+    margin-right: 200px;
+  }
+}
+/* WPP */
+.wpp {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+}
+
+/* FORMULARIO */
+.contactoF {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: normal;
+  margin-top: 20px;
+}
+.contactoF label {
+  display: block;
+  color: #729b79;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.contactoF .contactoInpu {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px dashed #729b79;
+  font-size: 20px;
+}
+.contactoF .boton {
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #729b79;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.8s ease;
+  transform: 0.2s ease;
+}
+.contactoF .boton:hover {
+  background-color: white;
+  transform: scale(1.1);
+  color: #729b79;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  .contactoF {
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+}
+/* ARTICLE */
+article {
+  margin-top: 70px;
+}
+article h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #729b79;
+}
+article .iframeUbi iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  article h2 {
+    font-size: 45px;
+  }
+}
+/* INDEX/HOME */
+.mainIndex {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainIndex ul li {
+  list-style-type: none;
+  text-decoration: none;
+  padding-inline: 20px;
+  margin-block: 10px;
+  margin-inline: 15px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 50%;
+  transition: background-color 0.8s ease;
+  transform: 0.2s ease;
+}
+.mainIndex ul li:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+.mainIndex ul li .boxEnlace {
+  text-decoration: none;
+  color: #729b79;
+}
+
+@media screen and (max-width: 450px) {
+  .mainIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mainIndex ul li {
+    margin-block: 10px;
+    margin-inline: 15px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainIndex {
+    height: 100vh;
+    background-image: url("../images/parallax2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* NOSOTROS */
+.mainNosotros {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+.mainNosotros h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #729b79;
+}
+.mainNosotros .nosotrosParrafo {
+  font-size: 20px;
+  text-align: justify;
+  color: #729b79;
+  margin-bottom: 15px;
+}
+.mainNosotros .nosotrosFoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 2px dashed white;
+}
+
+.sectionPlay {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  margin: 30px 25px 10px 25px;
+  align-content: center;
+}
+.sectionPlay h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #729b79;
+}
+.sectionPlay .sectionParrafo {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: #729b79;
+  margin-bottom: 10px;
+}
+.sectionPlay iframe {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mainNosotros {
+    grid-template-columns: auto auto;
+    gap: 25px;
+  }
+  .mainNosotros h1 {
+    font-size: 55px;
+  }
+  .mainNosotros .nosotrosFoto {
+    object-fit: cover;
+    width: 95%;
+    height: 92%;
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+  .mainNosotros .nosotrosParrafo {
+    font-size: 30px;
+  }
+  .sectionPlay h2 {
+    font-size: 45px;
+  }
+  .sectionPlay .sectionParrafo {
+    font-size: 26px;
+    text-align: center;
+  }
+  .sectionPlay .iframePlay {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .sectionPlay .iframePlay iframe {
+    width: 25%;
+    height: 370px;
+  }
+}
+/* MATES/YERBAS/TERMOS */
+.mainProductos .productoTitulo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #729b79;
+}
+.mainProductos .divProducto {
+  height: auto;
+  background-color: #729b79;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: 2px dashed white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 20px;
+}
+.mainProductos .divProducto .divTitulo {
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.mainProductos .divProducto .divParrafo {
+  font-size: 14px;
+  text-align: justify;
+  color: black;
+  margin-bottom: 15px;
+}
+.mainProductos .divProducto .productoImg {
+  width: 75%;
+  height: 60%;
+  object-fit: cover;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px dashed black;
+}
+.mainProductos .divProducto .botonPrecio {
+  padding: 5px;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  transition: background-color 0.8s ease;
+  transform: 0.2s ease;
+}
+.mainProductos .divProducto .botonPrecio:hover {
+  background-color: white;
+  transform: scale(1.1);
+  color: black;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 450px) {
+  .mainProductos .divProducto {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainProductos .productoTitulo {
+    font-size: 55px;
+  }
+  .mainProductos .divBloque {
+    margin-right: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    column-gap: 25px;
+  }
+  .mainProductos .divBloque .divProducto {
+    line-height: normal;
+  }
+  .mainProductos .divBloque .divProducto .divTitulo {
+    font-size: 30px;
+  }
+  .mainProductos .divBloque .divProducto .productoImg {
+    height: 75%;
+  }
+}
+/* CONTACTO */
+.display {
+  display: flex;
+  flex-direction: column;
+}
+.display .contacto {
+  width: 100%;
+}
+.display .contacto .contactoT {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #729b79;
+  font-weight: bold;
+}
+.display .contacto .contactoP {
+  font-size: 23px;
+  text-align: justify;
+  color: #729b79;
+  line-height: normal;
+}
+.display .contacto .contactoP .gracias {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .display {
+    display: grid;
+    grid-template-columns: 59% 39%;
+    column-gap: 17px;
+    align-items: center;
+    justify-content: center;
+  }
+  .display .contacto .contactoT {
+    font-size: 65px;
+    margin-bottom: 15px;
+  }
+  .display .contacto .contactoP {
+    font-size: 40px;
+  }
+  .display .contacto .contactoP .gracias {
+    font-size: 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
