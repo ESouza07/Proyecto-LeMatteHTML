@@ -32,6 +32,10 @@ header {
 header .navColor {
   background-color: #729b79;
 }
+header .imgNav {
+  width: 60px;
+  height: 50px;
+}
 header .linkNav {
   text-align: right;
   text-decoration: none;
@@ -41,9 +45,6 @@ header .linkNav {
 }
 header .linkNav .colorMenu {
   color: black !important;
-}
-header .linkNav .colorMenu:hover {
-  border-bottom: 2px solid black;
 }
 header .linkNav .colorDesple {
   margin-left: auto;
@@ -58,9 +59,6 @@ header .linkNav .colorDesple .fuenteDesple {
   font-size: 15px;
   font-weight: bold;
 }
-header .linkNav .colorDesple .fuenteDesple:hover {
-  border-bottom: 1px solid black;
-}
 header .estiloBoton {
   border: 2px solid black;
   font-size: 15px;
@@ -70,6 +68,12 @@ header .estiloBoton {
   header .linkNav {
     font-size: 22px;
     gap: 35px;
+  }
+  .colorMenu:hover {
+    border-bottom: 2px solid black;
+  }
+  .fuenteDesple:hover {
+    border-bottom: 1px solid black;
   }
 }
 /* FOOTER */
@@ -212,6 +216,7 @@ article .iframeUbi iframe {
 .mainIndex ul li:hover {
   background-color: black;
   transform: scale(1.1);
+  transition: 0.8s;
 }
 .mainIndex ul li .boxEnlace {
   text-decoration: none;

@@ -6,15 +6,16 @@ header{background-color: $color-principal;
 
     .navColor{background-color: $color-principal;}
 
+    .imgNav{width:60px;
+            height:50px}
+
     .linkNav{text-align: right;
     text-decoration: none;
     color: $color-secundario;
     font-size: 15px;
     font-weight: bold;
 
-        .colorMenu{color: $color-secundario !important;
-        &:hover{border-bottom: 2px solid $color-secundario;}
-        }
+        .colorMenu{color: $color-secundario !important;}
 
         .colorDesple{margin-left: auto;
             width: 20%;
@@ -27,8 +28,6 @@ header{background-color: $color-principal;
                 color: $color-secundario !important;
                 font-size: 15px;
                 font-weight: bold;
-                
-                &:hover{border-bottom: 1px solid $color-secundario;}
             }
         }
 }
@@ -39,4 +38,12 @@ header{background-color: $color-principal;
 
 @media screen and (min-width:1024px){
     header .linkNav{font-size: 22px;
-            gap: 35px;}}
+            gap: 35px;}
+        
+            .colorMenu{
+                &:hover{border-bottom: 2px solid $color-secundario;}
+            }
+
+            .fuenteDesple{&:hover{border-bottom: 1px solid $color-secundario;}}
+            
+        }
