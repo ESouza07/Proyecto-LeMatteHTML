@@ -1,28 +1,37 @@
 /* HEADER NAVBAR */
 
-header{background-color: $color-principal;
+header {
+    background-color: $color-principal;
     border-bottom: 2px dashed $color-terciario;
     padding: 0px 25px 0px 25px;
 
-    .navColor{background-color: $color-principal;}
+    .navColor {
+        background-color: $color-principal;
+    }
 
-    .imgNav{width:60px;
-            height:50px}
+    .imgNav {
+        width: 60px;
+        height: 50px
+    }
 
-    .linkNav{text-align: right;
-    text-decoration: none;
-    color: $color-secundario;
-    font-size: 15px;
-    font-weight: bold;
+    .linkNav {
+        text-align: right;
+        text-decoration: none;
+        color: $color-secundario;
+        font-size: 15px;
+        font-weight: bold;
 
-        .colorMenu{color: $color-secundario !important;}
+        .colorMenu {
+            color: $color-secundario !important;
+        }
 
-        .colorDesple{margin-left: auto;
+        .colorDesple {
+            margin-left: auto;
             width: 20%;
             background-color: $color-principal;
             opacity: 90%;
-        
-            .fuenteDesple{
+
+            .fuenteDesple {
                 text-align: center;
                 background-color: $color-principal !important;
                 color: $color-secundario !important;
@@ -30,20 +39,30 @@ header{background-color: $color-principal;
                 font-weight: bold;
             }
         }
+    }
+
+    .estiloBoton {
+        border: 2px solid $color-secundario;
+        font-size: 15px;
+    }
 }
 
-    .estiloBoton{border:2px solid $color-secundario;    
-    font-size: 15px;}
-}
+@media screen and (min-width:1024px) {
+    header .linkNav {
+        font-size: 22px;
+        gap: 35px;
+    }
 
-@media screen and (min-width:1024px){
-    header .linkNav{font-size: 22px;
-            gap: 35px;}
-        
-            .colorMenu{
-                &:hover{border-bottom: 2px solid $color-secundario;}
-            }
-
-            .fuenteDesple{&:hover{border-bottom: 1px solid $color-secundario;}}
-            
+    .colorMenu {
+        &:hover {
+            border-bottom: 2px solid $color-secundario;
         }
+    }
+
+    .fuenteDesple {
+        &:hover {
+            border-bottom: 1px solid $color-secundario;
+        }
+    }
+
+}

@@ -1,85 +1,106 @@
 /* MATES/YERBAS/TERMOS */
 
-.mainProductos{@extend %margin;
+.mainProductos {
+        @extend %margin;
 
-        .productoTitulo{text-align: center;
-                        font-size: 40px;
-                        font-weight: bold;
-                        color: $color-principal;}
-        
-        .divProducto{
-        height: auto;
-        background-color: $color-principal;
-        padding:5px 15px 5px 15px;
-        border-radius: 10px;
-        border: 2px dashed $color-terciario;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-block: 20px;
-
-                .divTitulo{font-size: 22px;
-                text-align: center; 
-                color: $color-secundario;
-                margin-top: 5px; 
-                margin-bottom: 10px;
-                font-weight: bold;}
-
-                .divParrafo{font-size: 14px;
-                text-align: justify; 
-                color: $color-secundario;
-                margin-bottom: 15px;}
-
-                .productoImg{width: 75%;
-                height: 60%;
-                object-fit:cover;
-                align-items: center;
-                border-radius: 5px;
-                border: 2px dashed $color-secundario;}
-
-                .botonPrecio{padding: 5px;
-                background-color: $color-secundario;
+        .productoTitulo {
+                text-align: center;
+                font-size: 40px;
                 font-weight: bold;
-                color: $color-terciario;
-                border-radius: 4px;
-                border:1px solid $color-terciario;
-                margin-top: 15px;
-                margin-bottom: 5px;
-                transition: background-color 0.8s ease;
-                transform: 0.2s ease;
+                color: $color-principal;
+        }
 
-                &:hover{background-color: $color-terciario;
-                        transform: scale(1.1);
+        .divProducto {
+                height: auto;
+                background-color: $color-principal;
+                padding: 5px 15px 5px 15px;
+                border-radius: 10px;
+                border: 2px dashed $color-terciario;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-block: 20px;
+
+                .divTitulo {
+                        font-size: 22px;
+                        text-align: center;
                         color: $color-secundario;
-                        border:1px solid $color-secundario;}
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        font-weight: bold;
+                }
+
+                .divParrafo {
+                        font-size: 14px;
+                        text-align: justify;
+                        color: $color-secundario;
+                        margin-bottom: 15px;
+                }
+
+                .productoImg {
+                        width: 75%;
+                        height: 60%;
+                        object-fit: cover;
+                        align-items: center;
+                        border-radius: 5px;
+                        border: 2px dashed $color-secundario;
+                }
+
+                .botonPrecio {
+                        padding: 5px;
+                        background-color: $color-secundario;
+                        font-weight: bold;
+                        color: $color-terciario;
+                        border-radius: 4px;
+                        border: 1px solid $color-terciario;
+                        margin-top: 15px;
+                        margin-bottom: 5px;
+                        transition: background-color 0.8s ease;
+                        transform: 0.2s ease;
+
+                        &:hover {
+                                background-color: $color-terciario;
+                                transform: scale(1.1);
+                                color: $color-secundario;
+                                border: 1px solid $color-secundario;
+                        }
                 }
         }
 }
 
-@media screen and (max-width:450px){
-        .mainProductos{
+@media screen and (max-width:450px) {
+        .mainProductos {
 
-                .divProducto{height: auto;}
+                .divProducto {
+                        height: auto;
+                }
         }
 }
 
-@media screen and (min-width:1024px){
-        .mainProductos{
+@media screen and (min-width:1024px) {
+        .mainProductos {
 
-                .productoTitulo{font-size: 55px;}
+                .productoTitulo {
+                        font-size: 55px;
+                }
 
-                .divBloque{
-                margin-right: 25px;
-                display: grid;
-                grid-template-columns: 50% 50%;
-                grid-template-rows: auto auto;
-                column-gap: 25px;
-        
-                        .divProducto{line-height: normal;
+                .divBloque {
+                        margin-right: 25px;
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        grid-template-rows: auto auto;
+                        column-gap: 25px;
 
-                                .divTitulo{font-size: 30px;}
-                
-                                .productoImg{height: 75%;}     
+                        .divProducto {
+                                line-height: normal;
+
+                                .divTitulo {
+                                        font-size: 30px;
+                                }
+
+                                .productoImg {
+                                        height: 75%;
+                                }
                         }
                 }
         }
