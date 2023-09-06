@@ -31,6 +31,7 @@
 
 @media screen and (min-width:1024px) {
     .display {
+        margin: 10px 40px;
         display: grid;
         grid-template-columns: 59% 39%;
         column-gap: 17px;
@@ -40,15 +41,15 @@
         .contacto {
 
             .contactoT {
-                font-size: 65px;
-                margin-bottom: 15px;
+                font-size: 70px;
+                margin-bottom: 10px;
             }
 
             .contactoP {
-                font-size: 40px;
+                font-size: 38px;
 
                 .gracias {
-                    font-size: 50px;
+                    font-size: 45px;
                 }
             }
         }

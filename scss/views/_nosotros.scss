@@ -31,7 +31,7 @@
 
 .sectionPlay {
     @include grid;
-    margin: 30px 25px 10px 25px;
+    @extend %margin;
     align-content: center;
 
     h2 {
@@ -50,27 +50,30 @@
     }
 
     iframe {
-        height: 90px;
+        height: 80px;
         width: 100%;
         display: flex;
         margin-top: 10px;
+        border: 1.5px solid $color-principal;
     }
 }
 
 @media screen and (min-width:1024px) {
     .mainNosotros {
+        margin: 10px 40px;
         grid-template-columns: auto auto;
+        align-items: center;
         gap: 25px;
 
         h1 {
-            font-size: 55px;
+            font-size: 60px;
         }
 
         .nosotrosFoto {
             object-fit: cover;
-            width: 95%;
-            height: 92%;
-            margin-top: 15px;
+            width: 94%;
+            height: 80%;
+            margin-top: 30px;
             margin-left: 25px;
         }
 
@@ -81,8 +84,10 @@
 
     .sectionPlay {
 
+        margin: 10px 40px;
+
         h2 {
-            font-size: 45px;
+            font-size: 50px;
         }
 
         .sectionParrafo {
@@ -98,6 +103,7 @@
             iframe {
                 width: 25%;
                 height: 370px;
+                border: 2px solid $color-principal;
             }
         }
     }

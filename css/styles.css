@@ -1,5 +1,5 @@
-.display, .mainProductos, .mainNosotros, article {
-  margin: 10px 25px 10px 25px;
+.display, .mainProductos, .sectionPlay, .mainNosotros, article {
+  margin: 10px 30px 10px 30px;
 }
 
 /* RESET */
@@ -27,7 +27,7 @@ body {
 header {
   background-color: #729b79;
   border-bottom: 2px dashed white;
-  padding: 0px 25px 0px 25px;
+  padding: 0px 30px 0px 30px;
 }
 header .navColor {
   background-color: #729b79;
@@ -65,14 +65,20 @@ header .estiloBoton {
 }
 
 @media screen and (min-width: 1024px) {
+  header {
+    padding: 0px 40px 0px 40px;
+  }
   header .linkNav {
     font-size: 22px;
     gap: 35px;
   }
-  .colorMenu:hover {
+  header .linkNav .colorMenu:hover {
     border-bottom: 2px solid black;
   }
-  .fuenteDesple:hover {
+  header .linkNav .fuenteDesple {
+    font-size: 20px !important;
+  }
+  header .linkNav .fuenteDesple:hover {
     border-bottom: 1px solid black;
   }
 }
@@ -107,6 +113,9 @@ footer .instagram:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  footer div div p {
+    margin: 0 10px;
+  }
   footer .instagram {
     margin-right: 200px;
   }
@@ -155,7 +164,7 @@ footer .instagram:hover {
 .contactoF .boton:hover {
   background-color: white;
   transform: scale(1.1);
-  color: #729b79;
+  color: black;
   border: 1px solid black;
 }
 
@@ -183,6 +192,9 @@ article .iframeUbi iframe {
 }
 
 @media screen and (min-width: 1024px) {
+  article {
+    margin: 10px 40px;
+  }
   article h2 {
     font-size: 45px;
   }
@@ -204,12 +216,12 @@ article .iframeUbi iframe {
   list-style-type: none;
   text-decoration: none;
   padding-inline: 20px;
-  margin-block: 10px;
+  margin-block: 15px;
   margin-inline: 15px;
   font-size: 20px;
   background-color: white;
   border-radius: 5px;
-  opacity: 50%;
+  opacity: 70%;
   transition: background-color 0.8s ease;
   transform: 0.2s ease;
 }
@@ -245,6 +257,9 @@ article .iframeUbi iframe {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .mainIndex ul li {
+    font-size: 28px;
+  }
 }
 /* NOSOTROS */
 .mainNosotros {
@@ -277,7 +292,6 @@ article .iframeUbi iframe {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  margin: 30px 25px 10px 25px;
   align-content: center;
 }
 .sectionPlay h2 {
@@ -294,32 +308,38 @@ article .iframeUbi iframe {
   margin-bottom: 10px;
 }
 .sectionPlay iframe {
-  height: 90px;
+  height: 80px;
   width: 100%;
   display: flex;
   margin-top: 10px;
+  border: 1.5px solid #729b79;
 }
 
 @media screen and (min-width: 1024px) {
   .mainNosotros {
+    margin: 10px 40px;
     grid-template-columns: auto auto;
+    align-items: center;
     gap: 25px;
   }
   .mainNosotros h1 {
-    font-size: 55px;
+    font-size: 60px;
   }
   .mainNosotros .nosotrosFoto {
     object-fit: cover;
-    width: 95%;
-    height: 92%;
-    margin-top: 15px;
+    width: 94%;
+    height: 80%;
+    margin-top: 30px;
     margin-left: 25px;
   }
   .mainNosotros .nosotrosParrafo {
     font-size: 30px;
   }
+  .sectionPlay {
+    margin: 10px 40px;
+  }
   .sectionPlay h2 {
-    font-size: 45px;
+    font-size: 50px;
   }
   .sectionPlay .sectionParrafo {
     font-size: 26px;
@@ -333,6 +353,7 @@ article .iframeUbi iframe {
   .sectionPlay .iframePlay iframe {
     width: 25%;
     height: 370px;
+    border: 2px solid #729b79;
   }
 }
 /* MATES/YERBAS/TERMOS */
@@ -376,7 +397,7 @@ article .iframeUbi iframe {
   border: 2px dashed black;
 }
 .mainProductos .divProducto .botonPrecio {
-  padding: 5px;
+  padding: 10px;
   background-color: black;
   font-weight: bold;
   color: white;
@@ -400,6 +421,9 @@ article .iframeUbi iframe {
   }
 }
 @media screen and (min-width: 1024px) {
+  .mainProductos {
+    margin: 10px 40px;
+  }
   .mainProductos .productoTitulo {
     font-size: 55px;
   }
@@ -447,6 +471,7 @@ article .iframeUbi iframe {
 
 @media screen and (min-width: 1024px) {
   .display {
+    margin: 10px 40px;
     display: grid;
     grid-template-columns: 59% 39%;
     column-gap: 17px;
@@ -454,14 +479,14 @@ article .iframeUbi iframe {
     justify-content: center;
   }
   .display .contacto .contactoT {
-    font-size: 65px;
-    margin-bottom: 15px;
+    font-size: 70px;
+    margin-bottom: 10px;
   }
   .display .contacto .contactoP {
-    font-size: 40px;
+    font-size: 38px;
   }
   .display .contacto .contactoP .gracias {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
