@@ -312,7 +312,7 @@ article .iframeUbi iframe {
   height: 80px;
   width: 100%;
   display: flex;
-  margin-top: 25px;
+  margin-top: 26px;
   border: 1.5px solid #729b79;
 }
 
@@ -373,7 +373,7 @@ article .iframeUbi iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block: 25px;
+  margin-block: 26px;
 }
 .mainProductos .divProducto .divTitulo {
   font-size: 22px;
