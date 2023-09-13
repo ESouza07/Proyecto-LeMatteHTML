@@ -8,6 +8,7 @@
                 font-size: 40px;
                 font-weight: bold;
                 color: $color-principal;
+                margin-bottom: 15px;
         }
 
         .divProducto {
@@ -19,7 +20,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-block: 26px;
+                margin-bottom: 30px;
 
                 .divTitulo {
                         font-size: 22px;
@@ -83,7 +84,7 @@
                 margin: 10px 40px;
 
                 .productoTitulo {
-                        font-size: 55px;
+                        font-size: 70px;
                 }
 
                 .divBloque {

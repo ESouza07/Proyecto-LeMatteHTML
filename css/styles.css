@@ -14,7 +14,7 @@ html {
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* BODY */
@@ -77,9 +77,11 @@ header .estiloBoton {
   }
   header .linkNav .fuenteDesple {
     font-size: 20px !important;
+    transition: box-shadow 0.3s, transform 0.3s;
   }
   header .linkNav .fuenteDesple:hover {
-    border-bottom: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
   }
 }
 /* FOOTER */
@@ -134,7 +136,7 @@ footer .instagram:hover {
   font-size: 25px;
   font-weight: bold;
   line-height: normal;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .contactoF label {
   display: block;
@@ -176,7 +178,7 @@ footer .instagram:hover {
 }
 /* ARTICLE */
 article {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 article h2 {
   text-align: center;
@@ -193,7 +195,7 @@ article .iframeUbi iframe {
 
 @media screen and (min-width: 1024px) {
   article {
-    margin: 10px 40px;
+    margin: 50px 40px 10px 40px;
   }
   article h2 {
     font-size: 45px;
@@ -273,9 +275,10 @@ article .iframeUbi iframe {
   font-size: 40px;
   font-weight: bold;
   color: #729b79;
+  margin-bottom: 10px;
 }
 .mainNosotros .nosotrosParrafo {
-  font-size: 20px;
+  font-size: 22px;
   text-align: justify;
   color: #729b79;
   margin-bottom: 15px;
@@ -309,7 +312,7 @@ article .iframeUbi iframe {
   margin-bottom: 10px;
 }
 .sectionPlay iframe {
-  height: 80px;
+  height: 83px;
   width: 100%;
   display: flex;
   margin-top: 26px;
@@ -324,7 +327,7 @@ article .iframeUbi iframe {
     gap: 25px;
   }
   .mainNosotros h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
   .mainNosotros .nosotrosFoto {
     object-fit: cover;
@@ -363,6 +366,7 @@ article .iframeUbi iframe {
   font-size: 40px;
   font-weight: bold;
   color: #729b79;
+  margin-bottom: 15px;
 }
 .mainProductos .divProducto {
   height: auto;
@@ -373,7 +377,7 @@ article .iframeUbi iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block: 26px;
+  margin-bottom: 30px;
 }
 .mainProductos .divProducto .divTitulo {
   font-size: 22px;
@@ -426,7 +430,7 @@ article .iframeUbi iframe {
     margin: 10px 40px;
   }
   .mainProductos .productoTitulo {
-    font-size: 55px;
+    font-size: 70px;
   }
   .mainProductos .divBloque {
     margin-right: 25px;
@@ -454,14 +458,14 @@ article .iframeUbi iframe {
   width: 100%;
 }
 .display .contacto .contactoT {
-  font-size: 55px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 10px;
   color: #729b79;
   font-weight: bold;
 }
 .display .contacto .contactoP {
-  font-size: 23px;
+  font-size: 22px;
   text-align: justify;
   color: #729b79;
   line-height: normal;

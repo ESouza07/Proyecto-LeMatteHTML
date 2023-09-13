@@ -2,7 +2,7 @@
 
 article {
     @extend %margin;
-    margin-top: 70px;
+    margin-top: 40px;
 
     h2 {
         text-align: center;
@@ -22,7 +22,7 @@ article {
 @media screen and (min-width:1024px) {
     article {
 
-        margin: 10px 40px;
+        margin: 50px 40px 10px 40px;
 
         h2 {
             font-size: 45px;

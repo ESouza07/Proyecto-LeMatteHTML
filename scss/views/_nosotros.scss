@@ -10,10 +10,11 @@
         font-size: 40px;
         font-weight: bold;
         color: $color-principal;
+        margin-bottom: 10px;
     }
 
     .nosotrosParrafo {
-        font-size: 20px;
+        font-size: 22px;
         text-align: justify;
         color: $color-principal;
         margin-bottom: 15px;
@@ -50,7 +51,7 @@
     }
 
     iframe {
-        height: 80px;
+        height: 83px;
         width: 100%;
         display: flex;
         margin-top: 26px;
@@ -66,7 +67,7 @@
         gap: 25px;
 
         h1 {
-            font-size: 60px;
+            font-size: 70px;
         }
 
         .nosotrosFoto {
